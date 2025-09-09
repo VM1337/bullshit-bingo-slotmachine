@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    background: #134b86;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.slot-machine {
+    background: linear-gradient(145deg, #0d3764, #1a4a7a);
+    border: 3px solid #ff9c00;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+h1 {
+    color: #ff9c00;
+    margin: 10px 0 50px 0;
+    text-shadow: 0 0 30px #ff9c00;
+}
+
+.slots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.slot {
+    max-width: 100%;
+    padding: 0.5rem 2rem;
+    color: #ff9c00;
+    background: #0d3764;
+    border: 2px solid #ff9c00;
+    border-radius: 10px;
+    font-size: 3em;
+    transition: all 0.3s;
+}
+
+.slot.spinning {
+    animation: spin 0.15s linear infinite;
+    filter: blur(1.8px)
+}
+
+@keyframes spin {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+button {
+    background: #ff9c00;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 25px 0;
+}
+
+button:hover {
+    background: #dd8502;
+    transform: translateY(-2px);
+}
+
+button:disabled {
+    background: #666;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.result {
+    color: #ff9c00;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 15px;
+}
