@@ -1,6 +1,6 @@
 const words1 = ['The Big', 'The Great', 'The Awesome', 'The Legendary', 'The Tremendous', 'The Fantastic', 'The Incredible', 'The Amazing', 'The Terrific', 'The Phenomenal', 'The Wonderful', 'The Outstanding', 'The Huge'];
-const words2 = ['Squad', 'Agile', 'Mission', 'Scrum', 'Tribe', 'Guild', 'Team'];
-const words3 = ['Leader', 'Agent', 'Cheese', 'Architect', 'Engineer', 'Coordinator', 'Visionary', 'Champion', 'Manager'];
+const words2 = ['Squad', 'Agile', 'Mission', 'Scrum', 'Tribe', 'Guild', 'Team', 'Quality', 'Security'];
+const words3 = ['Leader', 'Agent', 'Cheese', 'Architect', 'Engineer', 'Coordinator', 'Visionary', 'Champion', 'Manager', 'Evangelist'];
 let spinning = false;
 
 function getRandom(coll) {
